@@ -28,7 +28,6 @@ public class Button extends JButton implements MouseListener, ActionListener {
         button.addActionListener(this);
         state = true;
     }
-
     public JButton getButton() {
         return button;
     }
@@ -37,11 +36,6 @@ public class Button extends JButton implements MouseListener, ActionListener {
         state = state1;
         button.setVisible(state);
     }
-
-    public boolean getState() {
-        return state;
-    }
-
     public int getButtonX() {
         return button.getX();
     }
@@ -81,7 +75,6 @@ public class Button extends JButton implements MouseListener, ActionListener {
     public void mouseReleased(MouseEvent e) {
         if (e.getButton() == 1) {
             setState(false);
-            Grid.visited.set(Grid.buttons.indexOf(this), true);
         }
 
     }

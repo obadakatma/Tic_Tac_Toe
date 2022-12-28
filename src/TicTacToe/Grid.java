@@ -6,7 +6,6 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Objects;
 import java.util.Random;
 
 public class Grid extends JPanel {
@@ -28,7 +27,6 @@ public class Grid extends JPanel {
             }
         }
     }
-
     @Override
     public void paintComponent(Graphics g) {
         this.setBackground(new Color(38, 38, 147));
