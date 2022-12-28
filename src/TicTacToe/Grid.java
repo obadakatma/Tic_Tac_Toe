@@ -14,26 +14,19 @@ public class Grid extends JPanel {
     Image image;
     public static final ArrayList<Button> buttons = new ArrayList<Button>();
     public static final int[] xoTurn = new int[9];
-    public static final ArrayList<Boolean> visited = new ArrayList<Boolean>(9);
     public static int X = 2;
     public static int O = 1;
-    public static int E = 0;
     public static boolean Turn;
     public static int winner;
-    private static boolean state;
     private static int PhotoNum;
 
     public Grid() {
         firstTurn();
-        for (int i = 0; i < 9; i++) {
-            visited.add(false);
-        }
         for (int i = 0; i < 261; i += 87) {
             for (int j = 0; j < 285; j += 95) {
                 buttons.add(new Button(i, j));
             }
         }
-        state = false;
     }
 
     @Override
@@ -60,15 +53,6 @@ public class Grid extends JPanel {
             int val2 = 10;
             g2.drawImage(setImage(), x + val1, y + val1, width - val2, height - val2, null);
         }
-    }
-
-
-    public static void setState(boolean state1) {
-        state = state1;
-    }
-
-    public static boolean getState() {
-        return state;
     }
 
     public static void setPhotoNum(int n) {
@@ -105,7 +89,6 @@ public class Grid extends JPanel {
 
 
     public void firstTurn() {
-
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -115,9 +98,12 @@ public class Grid extends JPanel {
 
         if (random.nextInt(2) == 0) {
             Turn = true;
+            JOptionPane.showMessageDialog(null, "X will start");
         } else {
             Turn = false;
+            JOptionPane.showMessageDialog(null, "O will start");
         }
+
     }
 
     public static boolean checkWin() {
