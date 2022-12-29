@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Tik_Tac_Toe:jar" />
+      <artifact name="Tic_Tac_Toe:jar" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
@@ -10,17 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ad0dd083-bc4d-4825-b152-0566d64b1f6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Photo/E.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo/O.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Photo/X.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Tic_Tac_Toe_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Photo/Button.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photo/Button.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Photo/tic-tac-toe_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Photo/tic-tac-toe_icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Grid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +50,8 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/obada/Desktop/MyProjects/Tik_Tac_Toe&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;GitStage.ChangesTree.GroupingKeys&quot;: [
@@ -73,6 +66,7 @@
       <recent name="C:\Users\obada\Desktop\MyProjects\Tik_Tak_Toe\Photo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\obada\Desktop\MyProjects\Tik_Tac_Toe\out\production" />
       <recent name="C:\Users\obada\Desktop\MyProjects\Tik_Tak_Toe\src\TicTacToe" />
       <recent name="C:\Users\obada\Desktop\MyProjects\Tik_Tak_Toe\Photo" />
     </key>
@@ -121,7 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672244955917</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some changes">
+      <created>1672287480565</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672287480565</updated>
+    </task>
+    <task id="LOCAL-00005" summary="some changes">
+      <created>1672287561339</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672287561339</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +146,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Game done" />
     <MESSAGE value="add panel shows who start" />
-    <option name="LAST_COMMIT_MESSAGE" value="add panel shows who start" />
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
