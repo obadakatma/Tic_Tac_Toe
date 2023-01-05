@@ -17,16 +17,19 @@ public class Grid extends JPanel {
     public static int O = 1;
     public static boolean Turn;
     public static int winner;
+    public static boolean Draw;
     private static int PhotoNum;
 
     public Grid() {
         firstTurn();
+        Draw = false;
         for (int i = 0; i < 261; i += 87) {
             for (int j = 0; j < 285; j += 95) {
                 buttons.add(new Button(i, j));
             }
         }
     }
+
     @Override
     public void paintComponent(Graphics g) {
         this.setBackground(new Color(38, 38, 147));
@@ -105,7 +108,7 @@ public class Grid extends JPanel {
     }
 
     public static boolean checkWin() {
-
+        int count = 0;
         if (xoTurn[0] == xoTurn[1] && xoTurn[0] == xoTurn[2] && (xoTurn[0] == X || xoTurn[0] == O)) {
             winner = xoTurn[0];
             return true;
@@ -138,15 +141,24 @@ public class Grid extends JPanel {
             winner = xoTurn[2];
             return true;
         }
+        for (int i = 0; i < 9; i++) {
+            if (xoTurn[i] != 0) {
+                count++;
+            }
+        }
+        if (count + 1 == 9) {
+            Draw = true;
+        }
         return false;
     }
 
     public static void winnerPanel(boolean bool) {
         if (bool) {
-            if (winner == X)
-                JOptionPane.showMessageDialog(null, "X is the winner");
-            else
-                JOptionPane.showMessageDialog(null, "O is the winner");
+            if (winner == X) JOptionPane.showMessageDialog(null, "X is the winner");
+            else JOptionPane.showMessageDialog(null, "O is the winner");
+        }
+        if (Draw) {
+            JOptionPane.showMessageDialog(null, "Draw");
         }
     }
 }
